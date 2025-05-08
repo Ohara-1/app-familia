@@ -27,4 +27,7 @@ with app.app_context():
 
 # Para desenvolvimento local
 if __name__ == '__main__':
-    app.run(debug=app.config['DEBUG']) 
+    app.run(debug=app.config['DEBUG'])
+
+# Para o Vercel
+app = app 
